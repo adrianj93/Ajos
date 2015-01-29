@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21D0AF7D1A7ADD75008E9225 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D0AF7C1A7ADD75008E9225 /* Player.m */; };
 		3AF13C8E1A71631000FAD128 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C8D1A71631000FAD128 /* main.m */; };
 		3AF13C911A71631000FAD128 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C901A71631000FAD128 /* AppDelegate.m */; };
 		3AF13C941A71631000FAD128 /* ajos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C921A71631000FAD128 /* ajos.xcdatamodeld */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21D0AF7B1A7ADD75008E9225 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		21D0AF7C1A7ADD75008E9225 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		3AF13C881A71631000FAD128 /* ajos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ajos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF13C8C1A71631000FAD128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF13C8D1A71631000FAD128 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 		3AF13C8A1A71631000FAD128 /* ajos */ = {
 			isa = PBXGroup;
 			children = (
+				21D0AF7B1A7ADD75008E9225 /* Player.h */,
+				21D0AF7C1A7ADD75008E9225 /* Player.m */,
 				3AF13C8F1A71631000FAD128 /* AppDelegate.h */,
 				3AF13C901A71631000FAD128 /* AppDelegate.m */,
 				3AF13C951A71631000FAD128 /* ViewController.h */,
@@ -226,6 +231,7 @@
 				3AF13C941A71631000FAD128 /* ajos.xcdatamodeld in Sources */,
 				3AF13C971A71631000FAD128 /* ViewController.m in Sources */,
 				3AF13C8E1A71631000FAD128 /* main.m in Sources */,
+				21D0AF7D1A7ADD75008E9225 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ajos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ajos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +426,7 @@
 				3AF13CB01A71631100FAD128 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AF13CB11A71631100FAD128 /* Build configuration list for PBXNativeTarget "ajosTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +435,7 @@
 				3AF13CB31A71631100FAD128 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
