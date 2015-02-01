@@ -29,6 +29,9 @@
                             </label>
                             <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHy-lS-XRG">
                                 <rect key="frame" x="140" y="219" width="320" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="asS-tQ-bcU"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLr-Ea-EaM">
                                 <rect key="frame" x="242" y="475" width="116" height="40"/>
@@ -56,8 +59,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quiz Game" id="9hF-78-wkm">
-                        <barButtonItem key="rightBarButtonItem" title="Dodaj" id="FN3-lC-Mwn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Dodaj" id="FN3-lC-Mwn">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="BYZ-38-t0r" id="muz-B5-OQY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="picker" destination="LHy-lS-XRG" id="pF1-5d-QUC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
