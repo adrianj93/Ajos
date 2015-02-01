@@ -43,7 +43,7 @@
                                     <color key="titleShadowColor" red="0.30940116519999999" green="0.5" blue="0.1575011228" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="poD-mG-rxB" kind="show" id="CkE-bJ-WLP"/>
+                                    <segue destination="poD-mG-rxB" kind="modal" id="txU-6j-TIg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,6 +66,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="PlayButton" destination="KLr-Ea-EaM" id="pKp-nX-Vdc"/>
                         <outlet property="picker" destination="LHy-lS-XRG" id="pF1-5d-QUC"/>
                     </connections>
                 </viewController>
@@ -73,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1581" y="288"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz Scene-->
         <scene sceneID="2ii-Xs-NQG">
             <objects>
-                <viewController id="poD-mG-rxB" sceneMemberID="viewController">
+                <viewController title="Quiz Scene" id="poD-mG-rxB" customClass="QuizViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Dh-jR-Qqp"/>
                         <viewControllerLayoutGuide type="bottom" id="Rr5-R7-Bxh"/>
@@ -108,7 +109,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu bedzie sie pokazywać pytanie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzQ-oY-HPF">
-                                <rect key="frame" x="123" y="147" width="354" height="111"/>
+                                <rect key="frame" x="123" y="103" width="354" height="111"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="354" id="6zI-AY-TKJ"/>
                                     <constraint firstAttribute="height" constant="111" id="Veu-Kt-rwe"/>
@@ -128,6 +129,9 @@
                             <constraint firstItem="CzQ-oY-HPF" firstAttribute="top" secondItem="8Dh-jR-Qqp" secondAttribute="bottom" constant="83" id="fEp-92-QDi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="view" destination="vA6-dA-qMK" id="03z-CM-6o2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9p-Kc-T6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -4,11 +4,12 @@
 //
 //  Created by Adrian Janiak on 22.01.2015.
 //  Copyright (c) 2015 Adrian Janiak. All rights reserved.
-//
+
 
 #import "ViewController.h"
 #import "Player.h"
 #import "AppDelegate.h"
+#import "QuizViewController.h"
 
 @interface ViewController ()
 
@@ -30,12 +31,8 @@
     NSArray *results = [moc executeFetchRequest:fetchRequest error:nil];    // No error handling - bad practice
     self.players = [results mutableCopy];
     //__testpicker = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
-    //NSLog(@"%@", self.players[0]);
-    //test_picker = [results mutableCopy];
     //__testpicker = [results mutableCopy];
 
-    
-    
     self.picker.dataSource = self;
     self.picker.delegate = self;
 }
@@ -60,8 +57,8 @@
 {
     //return __testpicker[row];
     //return [self.players objectAtIndex:row];
-    Player *pley = [self.players objectAtIndex:row];
-    return pley.nick;
+    Player *play = [self.players objectAtIndex:row];
+    return play.nick;
 }
 
 
@@ -69,6 +66,7 @@
 {
     // This method is triggered whenever the user makes a change to the picker selection.
     // The parameter named row and component represents what was selected.
+    
 }
 
 - (IBAction)addButtonTapped:(id)sender {
