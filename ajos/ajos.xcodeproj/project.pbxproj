@@ -10,6 +10,7 @@
 		21708A831A865025006F61BD /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 21708A821A865025006F61BD /* Question.m */; };
 		21D0AF7D1A7ADD75008E9225 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D0AF7C1A7ADD75008E9225 /* Player.m */; };
 		21E236FB1A7E69CE00004FE3 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E236FA1A7E69CE00004FE3 /* QuizViewController.m */; };
+		3A916BD31A868FF300DFB0FD /* FinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A916BD21A868FF300DFB0FD /* FinishViewController.m */; };
 		3AF13C8E1A71631000FAD128 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C8D1A71631000FAD128 /* main.m */; };
 		3AF13C911A71631000FAD128 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C901A71631000FAD128 /* AppDelegate.m */; };
 		3AF13C941A71631000FAD128 /* ajos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C921A71631000FAD128 /* ajos.xcdatamodeld */; };
@@ -37,6 +38,8 @@
 		21D0AF7C1A7ADD75008E9225 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		21E236F91A7E69CE00004FE3 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		21E236FA1A7E69CE00004FE3 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		3A916BD11A868FF300DFB0FD /* FinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishViewController.h; sourceTree = "<group>"; };
+		3A916BD21A868FF300DFB0FD /* FinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishViewController.m; sourceTree = "<group>"; };
 		3AF13C881A71631000FAD128 /* ajos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ajos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF13C8C1A71631000FAD128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF13C8D1A71631000FAD128 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				3AF13C951A71631000FAD128 /* ViewController.h */,
 				3AF13C961A71631000FAD128 /* ViewController.m */,
 				3AF13C981A71631000FAD128 /* Main.storyboard */,
+				3A916BD11A868FF300DFB0FD /* FinishViewController.h */,
+				3A916BD21A868FF300DFB0FD /* FinishViewController.m */,
 				21E236F91A7E69CE00004FE3 /* QuizViewController.h */,
 				21E236FA1A7E69CE00004FE3 /* QuizViewController.m */,
 				3AF13C9B1A71631000FAD128 /* Images.xcassets */,
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF13C911A71631000FAD128 /* AppDelegate.m in Sources */,
+				3A916BD31A868FF300DFB0FD /* FinishViewController.m in Sources */,
 				3AF13C941A71631000FAD128 /* ajos.xcdatamodeld in Sources */,
 				3AF13C971A71631000FAD128 /* ViewController.m in Sources */,
 				3AF13C8E1A71631000FAD128 /* main.m in Sources */,

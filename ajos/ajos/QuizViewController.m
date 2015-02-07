@@ -1,4 +1,3 @@
-//
 //  QuizViewController.m
 //  ajos
 //
@@ -7,10 +6,13 @@
 //
 
 #import "QuizViewController.h"
+#import "AppDelegate.h"
 
 @interface QuizViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *HighScore;
 @property (weak, nonatomic) IBOutlet UILabel *CurrentScore;
+@property (strong, nonatomic) NSArray *questionArray;
+
 
 @end
 
@@ -19,8 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.HighScore.text = [self.players_score stringValue];
-    //self.HighScore.text = self.players_nick;
     self.CurrentScore.text = [@0 stringValue];
+    
+    
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    NSManagedObjectContext *moc = appDelegate.managedObjectContext;
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Question"];
+    NSArray *results = [moc executeFetchRequest:fetchRequest error:nil];
+    self.questionArray = [results mutableCopy];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -30,13 +39,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
+
