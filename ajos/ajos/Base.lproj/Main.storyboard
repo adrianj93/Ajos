@@ -86,7 +86,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bW-RW-22d">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bW-RW-22d">
                                 <rect key="frame" x="78" y="462" width="61" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Dl3-cq-Qnl"/>
@@ -122,7 +122,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-oc-gE6">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-oc-gE6">
                                 <rect key="frame" x="462" y="462" width="60" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="bag-Fs-Wm1"/>
@@ -136,6 +136,16 @@
                                     <action selector="NieButtonTapped:" destination="poD-mG-rxB" eventType="touchUpInside" id="3j8-H6-OLB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcv-wS-r8W">
+                                <rect key="frame" x="201" y="321" width="140" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Powrot">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="IYs-WE-NTE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -145,13 +155,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="gXb-oc-gE6" secondAttribute="trailing" constant="62" id="JTg-Nf-WbT"/>
                             <constraint firstItem="CzQ-oY-HPF" firstAttribute="centerX" secondItem="vA6-dA-qMK" secondAttribute="centerX" id="MM8-Ri-J8N"/>
                             <constraint firstItem="Rr5-R7-Bxh" firstAttribute="top" secondItem="gXb-oc-gE6" secondAttribute="bottom" constant="77" id="T2L-xV-sso"/>
+                            <constraint firstAttribute="centerY" secondItem="tcv-wS-r8W" secondAttribute="centerY" id="VBu-7A-lsV"/>
                             <constraint firstItem="CzQ-oY-HPF" firstAttribute="top" secondItem="8Dh-jR-Qqp" secondAttribute="bottom" constant="83" id="fEp-92-QDi"/>
                             <constraint firstItem="HMr-GW-GHE" firstAttribute="top" secondItem="8Dh-jR-Qqp" secondAttribute="bottom" constant="8" id="lc2-51-Hfm"/>
+                            <constraint firstAttribute="centerX" secondItem="tcv-wS-r8W" secondAttribute="centerX" id="m99-K5-gVt"/>
                             <constraint firstItem="Qsc-P3-ML4" firstAttribute="top" secondItem="8Dh-jR-Qqp" secondAttribute="bottom" constant="8" id="oJA-Iz-Dmb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qsc-P3-ML4" secondAttribute="trailing" constant="87" id="yzV-zV-IAe"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="BackButton" destination="tcv-wS-r8W" id="rJ7-71-5FJ"/>
                         <outlet property="CurrentScore" destination="Qsc-P3-ML4" id="mYz-rD-zB9"/>
                         <outlet property="HighScore" destination="HMr-GW-GHE" id="P3d-dX-AiM"/>
                         <outlet property="NieButton" destination="gXb-oc-gE6" id="Bfj-tl-7fx"/>
@@ -177,6 +192,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yl6-VE-gUB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRN-kh-BPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,4 +217,7 @@
             <point key="canvasLocation" x="914" y="288"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="IYs-WE-NTE"/>
+    </inferredMetricsTieBreakers>
 </document>

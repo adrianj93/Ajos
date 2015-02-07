@@ -8,6 +8,7 @@
 #import "QuizViewController.h"
 #import "AppDelegate.h"
 #import "Question.h"
+#import "ViewController.h"
 
 
 @interface QuizViewController ()
@@ -21,6 +22,7 @@
 @property int score;
 @property int licznik;
 @property int life;
+@property (weak, nonatomic) IBOutlet UIButton *BackButton;
 
 @end
 
@@ -40,6 +42,7 @@
 
 -(void) addQuestion
 {
+    self.BackButton.hidden = true;
     self.licznik = 1;
     self.life = 3;
     self.CurrentScore.text = [@0 stringValue];
@@ -74,6 +77,40 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void) WrongAnswer
+{
+    UIAlertController *alertController
+    = [UIAlertController alertControllerWithTitle:@"Zla odpowiedz"
+                                          message:nil
+                                   preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *OkAction = [UIAlertAction actionWithTitle:@"Ok"
+                                                           style:UIAlertActionStyleCancel
+                                                         handler:nil];
+    [alertController addAction:OkAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    [self viewDidLoad];
+}
+
+- (void) Finish
+{
+    UIAlertController *alertController
+    = [UIAlertController alertControllerWithTitle:@"Koniec gry "
+                                          message:nil
+                                   preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *OkAction = [UIAlertAction actionWithTitle:@"Ok"
+                                                       style:UIAlertActionStyleCancel
+                                                     handler:nil];
+    [alertController addAction:OkAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    self.TakButton.enabled = false;
+    self.NieButton.enabled = false;
+    self.BackButton.Hidden = false;
+    self.QuestionLabel.hidden = true;
+    //self.players_score = self.CurrentScore.text;
+}
+
+
+
 - (IBAction)TakButtonTapped:(id)sender {
     Question *q11 = self.questionArray[self.wylosowanepytanie];
     if ([q11.answers compare:@1]==0)
@@ -87,10 +124,22 @@
     }
     else
     {
-        
+        self.life -=1;
+        if (self.life > 1)
+        {
+
+            [self WrongAnswer];
+            
+        }
+        else
+        {
+            [self Finish];
+        }
     }
     
 }
+
+
 - (IBAction)NieButtonTapped:(id)sender {
     Question *qq1 = self.questionArray[self.wylosowanepytanie];
     if ([qq1.answers compare:@0]==0)
@@ -104,7 +153,16 @@
     else
     {
         //odejmnij życie i jesli zycie jest mniejsze niz 1 to finish viewcontoller
-        
+        self.life -=1;
+        if (self.life > 1)
+        {
+            [self WrongAnswer];
+        }
+        else
+        {
+            
+            [self Finish];
+        }
     }
 }
 
