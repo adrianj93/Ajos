@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21708A831A865025006F61BD /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 21708A821A865025006F61BD /* Question.m */; };
 		21D0AF7D1A7ADD75008E9225 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D0AF7C1A7ADD75008E9225 /* Player.m */; };
 		21E236FB1A7E69CE00004FE3 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E236FA1A7E69CE00004FE3 /* QuizViewController.m */; };
 		3AF13C8E1A71631000FAD128 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C8D1A71631000FAD128 /* main.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21708A811A865025006F61BD /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		21708A821A865025006F61BD /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		21D0AF7B1A7ADD75008E9225 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		21D0AF7C1A7ADD75008E9225 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		21E236F91A7E69CE00004FE3 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				3AF13C9B1A71631000FAD128 /* Images.xcassets */,
 				3AF13C9D1A71631000FAD128 /* LaunchScreen.xib */,
 				3AF13C921A71631000FAD128 /* ajos.xcdatamodeld */,
+				21708A811A865025006F61BD /* Question.h */,
+				21708A821A865025006F61BD /* Question.m */,
 				3AF13C8B1A71631000FAD128 /* Supporting Files */,
 			);
 			path = ajos;
@@ -236,6 +241,7 @@
 				3AF13C941A71631000FAD128 /* ajos.xcdatamodeld in Sources */,
 				3AF13C971A71631000FAD128 /* ViewController.m in Sources */,
 				3AF13C8E1A71631000FAD128 /* main.m in Sources */,
+				21708A831A865025006F61BD /* Question.m in Sources */,
 				21D0AF7D1A7ADD75008E9225 /* Player.m in Sources */,
 				21E236FB1A7E69CE00004FE3 /* QuizViewController.m in Sources */,
 			);

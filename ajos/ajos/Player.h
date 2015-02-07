@@ -13,5 +13,6 @@
 @interface Player : NSManagedObject
 
 @property (nonatomic, retain) NSString * nick;
+@property (nonatomic, strong) NSNumber * highScore;
 
 @end

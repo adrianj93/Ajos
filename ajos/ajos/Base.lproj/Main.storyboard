@@ -118,15 +118,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="High Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMr-GW-GHE">
+                                <rect key="frame" x="38" y="28" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-P3-ML4">
+                                <rect key="frame" x="381" y="28" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2bW-RW-22d" firstAttribute="leading" secondItem="vA6-dA-qMK" secondAttribute="leadingMargin" constant="62" id="06J-zp-3Is"/>
+                            <constraint firstItem="HMr-GW-GHE" firstAttribute="leading" secondItem="vA6-dA-qMK" secondAttribute="leadingMargin" constant="22" id="44X-Xe-lq9"/>
                             <constraint firstItem="gXb-oc-gE6" firstAttribute="baseline" secondItem="2bW-RW-22d" secondAttribute="baseline" id="BPk-GB-Tcb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gXb-oc-gE6" secondAttribute="trailing" constant="62" id="JTg-Nf-WbT"/>
                             <constraint firstItem="CzQ-oY-HPF" firstAttribute="centerX" secondItem="vA6-dA-qMK" secondAttribute="centerX" id="MM8-Ri-J8N"/>
                             <constraint firstItem="Rr5-R7-Bxh" firstAttribute="top" secondItem="gXb-oc-gE6" secondAttribute="bottom" constant="77" id="T2L-xV-sso"/>
                             <constraint firstItem="CzQ-oY-HPF" firstAttribute="top" secondItem="8Dh-jR-Qqp" secondAttribute="bottom" constant="83" id="fEp-92-QDi"/>
+                            <constraint firstItem="HMr-GW-GHE" firstAttribute="top" secondItem="8Dh-jR-Qqp" secondAttribute="bottom" constant="8" id="lc2-51-Hfm"/>
+                            <constraint firstItem="Qsc-P3-ML4" firstAttribute="top" secondItem="8Dh-jR-Qqp" secondAttribute="bottom" constant="8" id="oJA-Iz-Dmb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qsc-P3-ML4" secondAttribute="trailing" constant="87" id="yzV-zV-IAe"/>
                         </constraints>
                     </view>
                     <connections>

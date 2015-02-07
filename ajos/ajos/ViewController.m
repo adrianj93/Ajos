@@ -92,6 +92,7 @@
                                  Player *newPlayer = [[Player alloc] initWithEntity:entityDescription
                                                               insertIntoManagedObjectContext:moc];
                                  newPlayer.nick = nameTextField.text;
+                                 newPlayer.highScore = 0;
                                  [self.players addObject:newPlayer];
                                  NSError *error;
                                  [moc save:&error];

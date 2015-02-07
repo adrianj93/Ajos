@@ -12,5 +12,6 @@
 @implementation Player
 
 @dynamic nick;
+@dynamic highScore;
 
 @end
