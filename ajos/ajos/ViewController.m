@@ -14,7 +14,8 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) NSMutableArray *players;
-@property (nonatomic, strong) NSArray *_testpicker;
+@property (nonatomic, strong) NSNumber *players_score;
+@property (nonatomic, strong) NSString *players_nick;
 
 @end
 
@@ -30,11 +31,11 @@
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Player"];
     NSArray *results = [moc executeFetchRequest:fetchRequest error:nil];    // No error handling - bad practice
     self.players = [results mutableCopy];
-    //__testpicker = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
-    //__testpicker = [results mutableCopy];
 
     self.picker.dataSource = self;
     self.picker.delegate = self;
+
+
 }
 
 
@@ -66,6 +67,9 @@
 {
     // This method is triggered whenever the user makes a change to the picker selection.
     // The parameter named row and component represents what was selected.
+    Player *firstPlayer = self.players[row];
+    self.players_score = firstPlayer.highScore;
+    //self.players_nick = firstPlayer.nick;
     
 }
 
@@ -92,7 +96,7 @@
                                  Player *newPlayer = [[Player alloc] initWithEntity:entityDescription
                                                               insertIntoManagedObjectContext:moc];
                                  newPlayer.nick = nameTextField.text;
-                                 newPlayer.highScore = 0;
+                                 newPlayer.highScore = @0;
                                  [self.players addObject:newPlayer];
                                  NSError *error;
                                  [moc save:&error];
@@ -111,6 +115,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"PlayerScore"]) {
+        QuizViewController *viewController = segue.destinationViewController;
+        viewController.players_score = self.players_score;
+        //viewController.players_nick = self.players_nick;
+    }
 }
 
 @end

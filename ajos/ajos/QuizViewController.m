@@ -9,7 +9,8 @@
 #import "QuizViewController.h"
 
 @interface QuizViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *NickLabel;
+@property (weak, nonatomic) IBOutlet UILabel *HighScore;
+@property (weak, nonatomic) IBOutlet UILabel *CurrentScore;
 
 @end
 
@@ -17,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.HighScore.text = [self.players_score stringValue];
+    //self.HighScore.text = self.players_nick;
+    self.CurrentScore.text = [@0 stringValue];
     // Do any additional setup after loading the view.
 }
 

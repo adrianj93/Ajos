@@ -10,4 +10,7 @@
 
 @interface QuizViewController : UIViewController
 
+@property (nonatomic, strong) NSNumber *players_score;
+@property (nonatomic, strong) NSString *players_nick;
+
 @end

@@ -43,7 +43,7 @@
                                     <color key="titleShadowColor" red="0.30940116519999999" green="0.5" blue="0.1575011228" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="poD-mG-rxB" kind="modal" id="txU-6j-TIg"/>
+                                    <segue destination="poD-mG-rxB" kind="modal" identifier="PlayerScore" id="txU-6j-TIg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -118,14 +118,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="High Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMr-GW-GHE">
-                                <rect key="frame" x="38" y="28" width="101" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-P3-ML4">
+                                <rect key="frame" x="381" y="28" width="116" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-P3-ML4">
-                                <rect key="frame" x="381" y="28" width="116" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="High Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMr-GW-GHE">
+                                <rect key="frame" x="38" y="28" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -146,6 +146,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CurrentScore" destination="Qsc-P3-ML4" id="mYz-rD-zB9"/>
+                        <outlet property="HighScore" destination="HMr-GW-GHE" id="P3d-dX-AiM"/>
                         <outlet property="view" destination="vA6-dA-qMK" id="03z-CM-6o2"/>
                     </connections>
                 </viewController>
