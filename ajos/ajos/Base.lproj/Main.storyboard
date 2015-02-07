@@ -96,17 +96,9 @@
                                 <state key="normal" title="Tak">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-oc-gE6">
-                                <rect key="frame" x="462" y="462" width="60" height="61"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="bag-Fs-Wm1"/>
-                                    <constraint firstAttribute="height" constant="61" id="uEH-RM-4UQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <state key="normal" title="Nie">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <action selector="TakButtonTapped:" destination="poD-mG-rxB" eventType="touchUpInside" id="sdQ-HB-CYU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu bedzie sie pokazywać pytanie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzQ-oY-HPF">
                                 <rect key="frame" x="123" y="103" width="354" height="111"/>
@@ -130,6 +122,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-oc-gE6">
+                                <rect key="frame" x="462" y="462" width="60" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="bag-Fs-Wm1"/>
+                                    <constraint firstAttribute="height" constant="61" id="uEH-RM-4UQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="Nie">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="NieButtonTapped:" destination="poD-mG-rxB" eventType="touchUpInside" id="3j8-H6-OLB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -148,7 +154,9 @@
                     <connections>
                         <outlet property="CurrentScore" destination="Qsc-P3-ML4" id="mYz-rD-zB9"/>
                         <outlet property="HighScore" destination="HMr-GW-GHE" id="P3d-dX-AiM"/>
+                        <outlet property="NieButton" destination="gXb-oc-gE6" id="Bfj-tl-7fx"/>
                         <outlet property="QuestionLabel" destination="CzQ-oY-HPF" id="Q5t-ST-aXk"/>
+                        <outlet property="TakButton" destination="2bW-RW-22d" id="bDC-B7-xM5"/>
                         <outlet property="view" destination="vA6-dA-qMK" id="03z-CM-6o2"/>
                     </connections>
                 </viewController>

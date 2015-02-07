@@ -15,7 +15,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *CurrentScore;
 @property (strong, nonatomic) NSMutableArray *questionArray;
 @property (weak, nonatomic) IBOutlet UILabel *QuestionLabel;
-
+@property (weak, nonatomic) IBOutlet UIButton *TakButton;
+@property (weak, nonatomic) IBOutlet UIButton *NieButton;
+@property int wylosowanepytanie;
+@property int score;
+@property int licznik;
+@property int life;
 
 @end
 
@@ -33,18 +38,25 @@
     [self.questionArray addObject:newQ1];
 }
 
+-(void) addQuestion
+{
+    self.licznik = 1;
+    self.life = 3;
+    self.CurrentScore.text = [@0 stringValue];
+    [self addQuestionArray:@"true" answers:@1];
+    [self addQuestionArray:@"test2" answers:@0];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.HighScore.text = [self.players_score stringValue];
-    self.CurrentScore.text = [@0 stringValue];
     
-    [self addQuestionArray:@"test" answers:@1];
-    [self addQuestionArray:@"test2" answers:@0];
-    [self addQuestionArray:@"tess3" answers:@1];
-    [self addQuestionArray:@"test4" answers:@0];
-    [self addQuestionArray:@"test5" answers:@1];
-    [self addQuestionArray:@"test6" answers:@0];
+    
+    //self.CurrentScore.text = [@(self.score) stringValue];
+    //to trzeba dać gdziś indziej bo za kazdym razem dodaje sie to do bazy danych
+    if (self.licznik !=1)
+        [self addQuestion];
+    
     
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     NSManagedObjectContext *moc = appDelegate.managedObjectContext;
@@ -52,8 +64,8 @@
     NSArray *results = [moc executeFetchRequest:fetchRequest error:nil];
     self.questionArray = [results mutableCopy];
     
-    int row = arc4random() %self.questionArray.count;
-    Question *q1 = self.questionArray[row];
+    self.wylosowanepytanie = arc4random() %self.questionArray.count;
+    Question *q1 = self.questionArray[self.wylosowanepytanie];
     self.QuestionLabel.text = q1.question;
     // Do any additional setup after loading the view.
 }
@@ -61,6 +73,39 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)TakButtonTapped:(id)sender {
+    Question *q11 = self.questionArray[self.wylosowanepytanie];
+    if ([q11.answers compare:@1]==0)
+    {
+
+        int currentvalue = [self.CurrentScore.text integerValue];
+        NSLog(@"odpowiedz prawidlowa dla tak");
+        currentvalue = currentvalue + 1;
+        self.CurrentScore.text = [NSString stringWithFormat:@"%d", currentvalue];
+        [self viewDidLoad];
+    }
+    else
+    {
+        
+    }
+    
+}
+- (IBAction)NieButtonTapped:(id)sender {
+    Question *qq1 = self.questionArray[self.wylosowanepytanie];
+    if ([qq1.answers compare:@0]==0)
+    {
+        int value = [self.CurrentScore.text integerValue];
+        NSLog(@"odpowiedz prawidlowa dla nie");
+        value = value + 1;
+        self.CurrentScore.text = [NSString stringWithFormat:@"%d", value];
+        [self viewDidLoad];
+    }
+    else
+    {
+        //odejmnij życie i jesli zycie jest mniejsze niz 1 to finish viewcontoller
+        
+    }
 }
 
 /*
