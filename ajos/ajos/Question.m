@@ -12,7 +12,6 @@
 @implementation Question
 
 @dynamic question;
-@dynamic category;
 @dynamic answers;
 
 @end

@@ -6,11 +6,10 @@
     </entity>
     <entity name="Question" representedClassName="Question" syncable="YES">
         <attribute name="answers" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Player" positionX="-54" positionY="-9" width="128" height="75"/>
-        <element name="Question" positionX="-54" positionY="9" width="128" height="90"/>
+        <element name="Question" positionX="-54" positionY="9" width="128" height="75"/>
     </elements>
 </model>

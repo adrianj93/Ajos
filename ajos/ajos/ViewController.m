@@ -29,7 +29,7 @@
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     NSManagedObjectContext *moc = appDelegate.managedObjectContext;
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Player"];
-    NSArray *results = [moc executeFetchRequest:fetchRequest error:nil];    // No error handling - bad practice
+    NSArray *results = [moc executeFetchRequest:fetchRequest error:nil];
     self.players = [results mutableCopy];
 
     self.picker.dataSource = self;
@@ -69,6 +69,7 @@
     // The parameter named row and component represents what was selected.
     Player *firstPlayer = self.players[row];
     self.players_score = firstPlayer.highScore;
+    
     //self.players_nick = firstPlayer.nick;
     
 }
@@ -90,14 +91,14 @@
                                style:UIAlertActionStyleDefault
                              handler:^(UIAlertAction *action) {
                                  UITextField *nameTextField = alertController.textFields[0];
-                                 AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+             AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
                                  NSManagedObjectContext *moc = appDelegate.managedObjectContext;
                                  NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Player"    inManagedObjectContext:moc];
                                  Player *newPlayer = [[Player alloc] initWithEntity:entityDescription
                                                               insertIntoManagedObjectContext:moc];
                                  newPlayer.nick = nameTextField.text;
                                  newPlayer.highScore = @0;
-                                 [self.players addObject:newPlayer];
+                                 [self.players addObject:newPlayer];                    
                                  NSError *error;
                                  [moc save:&error];
                                  if (error) {

@@ -13,7 +13,6 @@
 @interface Question : NSManagedObject
 
 @property (nonatomic, retain) NSString * question;
-@property (nonatomic, retain) NSString * category;
 @property (nonatomic, retain) NSNumber * answers;
 
 @end
