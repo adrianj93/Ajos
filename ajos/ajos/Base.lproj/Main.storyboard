@@ -88,26 +88,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHG-ml-r1b">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMr-GW-GHE">
-                                        <rect key="frame" x="38" y="28" width="101" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-P3-ML4">
-                                        <rect key="frame" x="381" y="28" width="116" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.88749601403061229" green="0.15566131671796105" blue="0.15505940168226914" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Question" translatesAutoresizingMaskIntoConstraints="NO" id="782-4B-hFY">
-                                <rect key="frame" x="-19" y="128" width="639" height="343"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Question" translatesAutoresizingMaskIntoConstraints="NO" id="782-4B-hFY">
+                                <rect key="frame" x="-19" y="147" width="639" height="343"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bW-RW-22d">
                                 <rect key="frame" x="78" y="462" width="61" height="61"/>
@@ -147,8 +129,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="IYs-WE-NTE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu bedzie sie pokazywać pytanie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzQ-oY-HPF">
-                                <rect key="frame" x="123" y="229" width="354" height="111"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tu bedzie sie pokazywać pytanie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzQ-oY-HPF">
+                                <rect key="frame" x="123" y="223" width="354" height="111"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="354" id="6zI-AY-TKJ"/>
                                     <constraint firstAttribute="height" constant="111" id="Veu-Kt-rwe"/>
@@ -157,18 +139,63 @@
                                 <color key="textColor" red="0.98399016218009538" green="0.93008700284090906" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Answer" translatesAutoresizingMaskIntoConstraints="NO" id="i0K-nR-mWg">
+                                <rect key="frame" x="66" y="515" width="85" height="85"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Answer" translatesAutoresizingMaskIntoConstraints="NO" id="2nq-tK-PPA">
+                                <rect key="frame" x="336" y="515" width="85" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pytanie N/N" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofC-2K-72m">
+                                <rect key="frame" x="239" y="181" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.78667979955374878" green="0.87361217026598748" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHG-ml-r1b">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMr-GW-GHE">
+                                        <rect key="frame" x="38" y="8" width="101" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-P3-ML4">
+                                        <rect key="frame" x="403" y="24" width="116" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Serce_filled" translatesAutoresizingMaskIntoConstraints="NO" id="Ppy-4y-xoa">
+                                        <rect key="frame" x="8" y="64" width="17" height="18"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Serce_filled" translatesAutoresizingMaskIntoConstraints="NO" id="GFW-gA-8V5">
+                                        <rect key="frame" x="38" y="64" width="17" height="18"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Serce_empty" translatesAutoresizingMaskIntoConstraints="NO" id="HOy-w9-FO6">
+                                        <rect key="frame" x="68" y="64" width="17" height="18"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88749601403061229" green="0.15566131671796105" blue="0.15505940168226914" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2bW-RW-22d" firstAttribute="leading" secondItem="vA6-dA-qMK" secondAttribute="leadingMargin" constant="62" id="06J-zp-3Is"/>
+                            <constraint firstAttribute="centerX" secondItem="2nq-tK-PPA" secondAttribute="centerX" constant="-78.5" id="62Y-IB-Aav"/>
+                            <constraint firstAttribute="centerY" secondItem="CzQ-oY-HPF" secondAttribute="centerY" id="AVb-vp-l1X"/>
                             <constraint firstItem="gXb-oc-gE6" firstAttribute="baseline" secondItem="2bW-RW-22d" secondAttribute="baseline" id="BPk-GB-Tcb"/>
+                            <constraint firstAttribute="centerX" secondItem="2nq-tK-PPA" secondAttribute="centerX" constant="-78.5" id="G1P-Fk-BLL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gXb-oc-gE6" secondAttribute="trailing" constant="62" id="JTg-Nf-WbT"/>
+                            <constraint firstAttribute="centerX" secondItem="ofC-2K-72m" secondAttribute="centerX" constant="15.5" id="M80-Lb-DTc"/>
                             <constraint firstItem="CzQ-oY-HPF" firstAttribute="centerX" secondItem="vA6-dA-qMK" secondAttribute="centerX" id="MM8-Ri-J8N"/>
+                            <constraint firstAttribute="centerX" secondItem="ofC-2K-72m" secondAttribute="centerX" constant="15.5" id="NKQ-U6-nDD"/>
                             <constraint firstItem="Rr5-R7-Bxh" firstAttribute="top" secondItem="gXb-oc-gE6" secondAttribute="bottom" constant="77" id="T2L-xV-sso"/>
                             <constraint firstAttribute="centerX" secondItem="782-4B-hFY" secondAttribute="centerX" id="U0Q-KC-qlY"/>
                             <constraint firstAttribute="centerY" secondItem="tcv-wS-r8W" secondAttribute="centerY" id="VBu-7A-lsV"/>
                             <constraint firstItem="CzQ-oY-HPF" firstAttribute="top" secondItem="8Dh-jR-Qqp" secondAttribute="bottom" constant="209" id="fEp-92-QDi"/>
                             <constraint firstAttribute="centerX" secondItem="tcv-wS-r8W" secondAttribute="centerX" id="m99-K5-gVt"/>
+                            <constraint firstAttribute="centerY" secondItem="ofC-2K-72m" secondAttribute="centerY" constant="108.5" id="yad-AG-kHj"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -245,6 +272,8 @@
     <resources>
         <image name="Answer" width="58" height="58"/>
         <image name="Question" width="187" height="183"/>
+        <image name="Serce_empty" width="14" height="12"/>
+        <image name="Serce_filled" width="14" height="12"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IYs-WE-NTE"/>
