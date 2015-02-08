@@ -123,6 +123,7 @@
                                 <rect key="frame" x="201" y="321" width="140" height="69"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Powrot">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -152,29 +153,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHG-ml-r1b">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                                <rect key="frame" x="0.0" y="34" width="600" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMr-GW-GHE">
-                                        <rect key="frame" x="38" y="8" width="101" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-P3-ML4">
-                                        <rect key="frame" x="403" y="24" width="116" height="21"/>
+                                        <rect key="frame" x="8" y="15" width="101" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Serce_filled" translatesAutoresizingMaskIntoConstraints="NO" id="Ppy-4y-xoa">
-                                        <rect key="frame" x="8" y="64" width="17" height="18"/>
+                                        <rect key="frame" x="8" y="44" width="17" height="18"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Serce_filled" translatesAutoresizingMaskIntoConstraints="NO" id="GFW-gA-8V5">
-                                        <rect key="frame" x="38" y="64" width="17" height="18"/>
+                                        <rect key="frame" x="38" y="44" width="17" height="18"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Serce_empty" translatesAutoresizingMaskIntoConstraints="NO" id="HOy-w9-FO6">
-                                        <rect key="frame" x="68" y="64" width="17" height="18"/>
+                                        <rect key="frame" x="68" y="44" width="17" height="18"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-P3-ML4">
+                                        <rect key="frame" x="402" y="15" width="116" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.88749601403061229" green="0.15566131671796105" blue="0.15505940168226914" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -212,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9p-Kc-T6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2247" y="288"/>
+            <point key="canvasLocation" x="2245" y="269"/>
         </scene>
         <!--Finish View Controller-->
         <scene sceneID="FT0-ZI-XXw">
