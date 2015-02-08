@@ -57,7 +57,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.HighScore.text = [self.players_score stringValue];
+    //self.HighScore.text = [self.players_score stringValue];
 
     //self.CurrentScore.text = [@(self.score) stringValue];
     //to trzeba dać gdziś indziej bo za kazdym razem dodaje sie to do bazy danych
@@ -134,6 +134,12 @@
     self.Hear1.image = [UIImage imageNamed:@"Serce_empty.png"];
     self.life = 3;
     //self.players_score = self.CurrentScore.text;
+    //int high_score = [self.HighScore.text integerValue];
+    //int current_score = [self.CurrentScore.text integerValue];
+    //if (high_score < current_score)
+    //{
+    //    self.HighScore.text = [NSString stringWithFormat:@"%d", current_score];
+    //}
 }
 
 
