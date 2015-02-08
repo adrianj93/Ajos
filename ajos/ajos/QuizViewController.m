@@ -51,8 +51,18 @@
     self.licznik = 1;
     self.life = 3;
     self.CurrentScore.text = [@0 stringValue];
-    [self addQuestionArray:@"true" answers:@1]; //true
-    [self addQuestionArray:@"test2" answers:@0]; //false
+    [self addQuestionArray:@"Czy lipiec ma 31 dni?" answers:@1]; //true
+    [self addQuestionArray:@"Czy wojna stuletnia trwała 100 lat?" answers:@0]; //false
+    [self addQuestionArray:@"Czy aborcja to uznanie cudzego dziecka za swoje?" answers:@0];
+    [self addQuestionArray:@"Czy po kanale weneckim pływają żaglówki?" answers:@0];
+    [self addQuestionArray:@"Czy tradycyjny napój Anglików to herbata z mlekiem?" answers:@1];
+    [self addQuestionArray:@"Czy rybi tłuszcz to smalec?" answers:@0];
+    [self addQuestionArray:@"Ocean Arktyczny to największy ocean na świecie?" answers:@0];
+    [self addQuestionArray:@"Czy najstarszy uniwersytet w Polsce to UAM w Poznaniu?" answers:@0];
+    [self addQuestionArray:@"Czy założyciel firmy samochodowej Ford mia≥ na imię Harrison?" answers:@0];
+    [self addQuestionArray:@"Czy o Pojezierzu Mazurskim mówi się \"Kraina Tysiąca Jezior\"?" answers:@1];
+    [self addQuestionArray:@"Czy w Wieliczce znajduje się rezerwat przyrody nieożywionej - kopalnia soli?" answers:@1];
+    [self addQuestionArray:@"Czy czarna skrzynka w samolotach jest pomarańczowa?" answers:@1];
 }
 
 - (void)viewDidLoad {
