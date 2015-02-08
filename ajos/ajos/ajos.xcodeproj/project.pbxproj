@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21708A831A865025006F61BD /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 21708A821A865025006F61BD /* Question.m */; };
+		21D0AF7D1A7ADD75008E9225 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D0AF7C1A7ADD75008E9225 /* Player.m */; };
+		21E236FB1A7E69CE00004FE3 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E236FA1A7E69CE00004FE3 /* QuizViewController.m */; };
+		3A916BD31A868FF300DFB0FD /* FinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A916BD21A868FF300DFB0FD /* FinishViewController.m */; };
+		3AF13C8E1A71631000FAD128 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C8D1A71631000FAD128 /* main.m */; };
+		3AF13C911A71631000FAD128 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C901A71631000FAD128 /* AppDelegate.m */; };
+		3AF13C941A71631000FAD128 /* ajos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C921A71631000FAD128 /* ajos.xcdatamodeld */; };
+		3AF13C971A71631000FAD128 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13C961A71631000FAD128 /* ViewController.m */; };
+		3AF13C9A1A71631000FAD128 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF13C981A71631000FAD128 /* Main.storyboard */; };
+		3AF13C9C1A71631000FAD128 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF13C9B1A71631000FAD128 /* Images.xcassets */; };
+		3AF13C9F1A71631000FAD128 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF13C9D1A71631000FAD128 /* LaunchScreen.xib */; };
+		3AF13CAB1A71631100FAD128 /* ajosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF13CAA1A71631100FAD128 /* ajosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AF13CA51A71631100FAD128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AF13C801A71631000FAD128 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF13C871A71631000FAD128;
+			remoteInfo = ajos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21708A811A865025006F61BD /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		21708A821A865025006F61BD /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		21D0AF7B1A7ADD75008E9225 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		21D0AF7C1A7ADD75008E9225 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		21E236F91A7E69CE00004FE3 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		21E236FA1A7E69CE00004FE3 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		3A916BD11A868FF300DFB0FD /* FinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishViewController.h; sourceTree = "<group>"; };
+		3A916BD21A868FF300DFB0FD /* FinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishViewController.m; sourceTree = "<group>"; };
+		3AF13C881A71631000FAD128 /* ajos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ajos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF13C8C1A71631000FAD128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF13C8D1A71631000FAD128 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AF13C8F1A71631000FAD128 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3AF13C901A71631000FAD128 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3AF13C931A71631000FAD128 /* ajos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ajos.xcdatamodel; sourceTree = "<group>"; };
+		3AF13C951A71631000FAD128 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3AF13C961A71631000FAD128 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3AF13C991A71631000FAD128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AF13C9B1A71631000FAD128 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3AF13C9E1A71631000FAD128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3AF13CA41A71631100FAD128 /* ajosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ajosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF13CA91A71631100FAD128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF13CAA1A71631100FAD128 /* ajosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ajosTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AF13C851A71631000FAD128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF13CA11A71631100FAD128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AF13C7F1A71631000FAD128 = {
+			isa = PBXGroup;
+			children = (
+				3AF13C8A1A71631000FAD128 /* ajos */,
+				3AF13CA71A71631100FAD128 /* ajosTests */,
+				3AF13C891A71631000FAD128 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AF13C891A71631000FAD128 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AF13C881A71631000FAD128 /* ajos.app */,
+				3AF13CA41A71631100FAD128 /* ajosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AF13C8A1A71631000FAD128 /* ajos */ = {
+			isa = PBXGroup;
+			children = (
+				21D0AF7B1A7ADD75008E9225 /* Player.h */,
+				21D0AF7C1A7ADD75008E9225 /* Player.m */,
+				3AF13C8F1A71631000FAD128 /* AppDelegate.h */,
+				3AF13C901A71631000FAD128 /* AppDelegate.m */,
+				3AF13C951A71631000FAD128 /* ViewController.h */,
+				3AF13C961A71631000FAD128 /* ViewController.m */,
+				3AF13C981A71631000FAD128 /* Main.storyboard */,
+				3A916BD11A868FF300DFB0FD /* FinishViewController.h */,
+				3A916BD21A868FF300DFB0FD /* FinishViewController.m */,
+				21E236F91A7E69CE00004FE3 /* QuizViewController.h */,
+				21E236FA1A7E69CE00004FE3 /* QuizViewController.m */,
+				3AF13C9B1A71631000FAD128 /* Images.xcassets */,
+				3AF13C9D1A71631000FAD128 /* LaunchScreen.xib */,
+				3AF13C921A71631000FAD128 /* ajos.xcdatamodeld */,
+				21708A811A865025006F61BD /* Question.h */,
+				21708A821A865025006F61BD /* Question.m */,
+				3AF13C8B1A71631000FAD128 /* Supporting Files */,
+			);
+			path = ajos;
+			sourceTree = "<group>";
+		};
+		3AF13C8B1A71631000FAD128 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AF13C8C1A71631000FAD128 /* Info.plist */,
+				3AF13C8D1A71631000FAD128 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AF13CA71A71631100FAD128 /* ajosTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AF13CAA1A71631100FAD128 /* ajosTests.m */,
+				3AF13CA81A71631100FAD128 /* Supporting Files */,
+			);
+			path = ajosTests;
+			sourceTree = "<group>";
+		};
+		3AF13CA81A71631100FAD128 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AF13CA91A71631100FAD128 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AF13C871A71631000FAD128 /* ajos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF13CAE1A71631100FAD128 /* Build configuration list for PBXNativeTarget "ajos" */;
+			buildPhases = (
+				3AF13C841A71631000FAD128 /* Sources */,
+				3AF13C851A71631000FAD128 /* Frameworks */,
+				3AF13C861A71631000FAD128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ajos;
+			productName = ajos;
+			productReference = 3AF13C881A71631000FAD128 /* ajos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AF13CA31A71631100FAD128 /* ajosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF13CB11A71631100FAD128 /* Build configuration list for PBXNativeTarget "ajosTests" */;
+			buildPhases = (
+				3AF13CA01A71631100FAD128 /* Sources */,
+				3AF13CA11A71631100FAD128 /* Frameworks */,
+				3AF13CA21A71631100FAD128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AF13CA61A71631100FAD128 /* PBXTargetDependency */,
+			);
+			name = ajosTests;
+			productName = ajosTests;
+			productReference = 3AF13CA41A71631100FAD128 /* ajosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AF13C801A71631000FAD128 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Adrian Janiak";
+				TargetAttributes = {
+					3AF13C871A71631000FAD128 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3AF13CA31A71631100FAD128 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3AF13C871A71631000FAD128;
+					};
+				};
+			};
+			buildConfigurationList = 3AF13C831A71631000FAD128 /* Build configuration list for PBXProject "ajos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AF13C7F1A71631000FAD128;
+			productRefGroup = 3AF13C891A71631000FAD128 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AF13C871A71631000FAD128 /* ajos */,
+				3AF13CA31A71631100FAD128 /* ajosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AF13C861A71631000FAD128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF13C9A1A71631000FAD128 /* Main.storyboard in Resources */,
+				3AF13C9F1A71631000FAD128 /* LaunchScreen.xib in Resources */,
+				3AF13C9C1A71631000FAD128 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF13CA21A71631100FAD128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AF13C841A71631000FAD128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF13C911A71631000FAD128 /* AppDelegate.m in Sources */,
+				3A916BD31A868FF300DFB0FD /* FinishViewController.m in Sources */,
+				3AF13C941A71631000FAD128 /* ajos.xcdatamodeld in Sources */,
+				3AF13C971A71631000FAD128 /* ViewController.m in Sources */,
+				3AF13C8E1A71631000FAD128 /* main.m in Sources */,
+				21708A831A865025006F61BD /* Question.m in Sources */,
+				21D0AF7D1A7ADD75008E9225 /* Player.m in Sources */,
+				21E236FB1A7E69CE00004FE3 /* QuizViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF13CA01A71631100FAD128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF13CAB1A71631100FAD128 /* ajosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AF13CA61A71631100FAD128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AF13C871A71631000FAD128 /* ajos */;
+			targetProxy = 3AF13CA51A71631100FAD128 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AF13C981A71631000FAD128 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AF13C991A71631000FAD128 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AF13C9D1A71631000FAD128 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AF13C9E1A71631000FAD128 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AF13CAC1A71631100FAD128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AF13CAD1A71631100FAD128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AF13CAF1A71631100FAD128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ajos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3AF13CB01A71631100FAD128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ajos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3AF13CB21A71631100FAD128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ajosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ajos.app/ajos";
+			};
+			name = Debug;
+		};
+		3AF13CB31A71631100FAD128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ajosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ajos.app/ajos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AF13C831A71631000FAD128 /* Build configuration list for PBXProject "ajos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF13CAC1A71631100FAD128 /* Debug */,
+				3AF13CAD1A71631100FAD128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AF13CAE1A71631100FAD128 /* Build configuration list for PBXNativeTarget "ajos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF13CAF1A71631100FAD128 /* Debug */,
+				3AF13CB01A71631100FAD128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AF13CB11A71631100FAD128 /* Build configuration list for PBXNativeTarget "ajosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF13CB21A71631100FAD128 /* Debug */,
+				3AF13CB31A71631100FAD128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3AF13C921A71631000FAD128 /* ajos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3AF13C931A71631000FAD128 /* ajos.xcdatamodel */,
+			);
+			currentVersion = 3AF13C931A71631000FAD128 /* ajos.xcdatamodel */;
+			path = ajos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3AF13C801A71631000FAD128 /* Project object */;
+}
