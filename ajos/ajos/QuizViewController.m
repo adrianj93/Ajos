@@ -23,6 +23,11 @@
 @property int licznik;
 @property int life;
 @property (weak, nonatomic) IBOutlet UIButton *BackButton;
+@property (weak, nonatomic) IBOutlet UILabel *NrPytLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *Heart3;
+
+@property (weak, nonatomic) IBOutlet UIImageView *Heart2;
+@property (weak, nonatomic) IBOutlet UIImageView *Hear1;
 
 @end
 
@@ -46,19 +51,39 @@
     self.licznik = 1;
     self.life = 3;
     self.CurrentScore.text = [@0 stringValue];
-    [self addQuestionArray:@"true" answers:@1];
-    [self addQuestionArray:@"test2" answers:@0];
+    [self addQuestionArray:@"true" answers:@1]; //true
+    [self addQuestionArray:@"test2" answers:@0]; //false
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.HighScore.text = [self.players_score stringValue];
-    
-    
+
     //self.CurrentScore.text = [@(self.score) stringValue];
     //to trzeba dać gdziś indziej bo za kazdym razem dodaje sie to do bazy danych
     if (self.licznik !=1)
         [self addQuestion];
+    
+    if (self.life == 3)
+    {
+        self.Heart3.image = [UIImage imageNamed:@"Serce_filled.png"];
+        self.Heart2.image = [UIImage imageNamed:@"Serce_filled.png"];
+        self.Hear1.image = [UIImage imageNamed:@"Serce_filled.png"];
+        
+    }
+    if (self.life == 2)
+    {
+        self.Heart3.image = [UIImage imageNamed:@"Serce_empty.png"];
+        self.Heart2.image = [UIImage imageNamed:@"Serce_filled.png"];
+        self.Hear1.image = [UIImage imageNamed:@"Serce_filled.png"];
+        
+    }
+    if (self.life == 1)
+    {
+        self.Heart3.image = [UIImage imageNamed:@"Serce_empty.png"];
+        self.Heart2.image = [UIImage imageNamed:@"Serce_empty.png"];
+        self.Hear1.image = [UIImage imageNamed:@"Serce_filled.png"];
+    }
     
     
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
@@ -106,6 +131,8 @@
     self.NieButton.enabled = false;
     self.BackButton.Hidden = false;
     self.QuestionLabel.hidden = true;
+    self.Hear1.image = [UIImage imageNamed:@"Serce_empty.png"];
+    self.life = 3;
     //self.players_score = self.CurrentScore.text;
 }
 
@@ -125,7 +152,7 @@
     else
     {
         self.life -=1;
-        if (self.life > 1)
+        if (self.life >= 1)
         {
 
             [self WrongAnswer];
@@ -154,7 +181,7 @@
     {
         //odejmnij życie i jesli zycie jest mniejsze niz 1 to finish viewcontoller
         self.life -=1;
-        if (self.life > 1)
+        if (self.life >= 1)
         {
             [self WrongAnswer];
         }

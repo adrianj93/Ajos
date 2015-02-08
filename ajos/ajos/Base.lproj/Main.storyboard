@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MkH-vf-4dp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MkH-vf-4dp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -89,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Question" translatesAutoresizingMaskIntoConstraints="NO" id="782-4B-hFY">
-                                <rect key="frame" x="-19" y="147" width="639" height="343"/>
+                                <rect key="frame" x="-29" y="145" width="639" height="343"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bW-RW-22d">
                                 <rect key="frame" x="78" y="462" width="61" height="61"/>
@@ -130,16 +130,6 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="IYs-WE-NTE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tu bedzie sie pokazywać pytanie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzQ-oY-HPF">
-                                <rect key="frame" x="123" y="223" width="354" height="111"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="354" id="6zI-AY-TKJ"/>
-                                    <constraint firstAttribute="height" constant="111" id="Veu-Kt-rwe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.98399016218009538" green="0.93008700284090906" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Answer" translatesAutoresizingMaskIntoConstraints="NO" id="i0K-nR-mWg">
                                 <rect key="frame" x="66" y="515" width="85" height="85"/>
                             </imageView>
@@ -179,6 +169,16 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.88749601403061229" green="0.15566131671796105" blue="0.15505940168226914" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tu bedzie sie pokazywać pytanie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzQ-oY-HPF">
+                                <rect key="frame" x="123" y="223" width="354" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="6zI-AY-TKJ"/>
+                                    <constraint firstAttribute="height" constant="111" id="Veu-Kt-rwe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.98399016218009538" green="0.93008700284090906" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -204,8 +204,12 @@
                     <connections>
                         <outlet property="BackButton" destination="tcv-wS-r8W" id="rJ7-71-5FJ"/>
                         <outlet property="CurrentScore" destination="Qsc-P3-ML4" id="mYz-rD-zB9"/>
+                        <outlet property="Hear1" destination="Ppy-4y-xoa" id="ddF-En-7NG"/>
+                        <outlet property="Heart2" destination="GFW-gA-8V5" id="bFT-7i-lEv"/>
+                        <outlet property="Heart3" destination="HOy-w9-FO6" id="BVX-40-ZZU"/>
                         <outlet property="HighScore" destination="HMr-GW-GHE" id="P3d-dX-AiM"/>
                         <outlet property="NieButton" destination="gXb-oc-gE6" id="Bfj-tl-7fx"/>
+                        <outlet property="NrPytLabel" destination="ofC-2K-72m" id="xhc-wy-udB"/>
                         <outlet property="QuestionLabel" destination="CzQ-oY-HPF" id="Q5t-ST-aXk"/>
                         <outlet property="TakButton" destination="2bW-RW-22d" id="bDC-B7-xM5"/>
                         <outlet property="view" destination="vA6-dA-qMK" id="03z-CM-6o2"/>
