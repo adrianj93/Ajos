@@ -8,11 +8,18 @@
 
 #import "AppDelegate.h"
 
+
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
 - (UIColor *)colorWithRGBHex:(UInt32)hex
 {

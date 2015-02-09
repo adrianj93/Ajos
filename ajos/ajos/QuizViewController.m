@@ -35,6 +35,11 @@
 
 @implementation QuizViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void) addQuestionArray: (NSString*)text_question answers:(NSNumber*)answers
 {
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
@@ -111,6 +116,8 @@
     // Do any additional setup after loading the view.
     self.PytanieLabel.text = [NSString stringWithFormat:@"Pytanie %d", self.ktore_pytanie];
     self.ktore_pytanie++;
+    [self setNeedsStatusBarAppearanceUpdate];
+    
 }
 
 - (void)didReceiveMemoryWarning {
