@@ -28,6 +28,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *Heart2;
 @property (weak, nonatomic) IBOutlet UIImageView *Hear1;
+@property (weak, nonatomic) IBOutlet UILabel *PytanieLabel;
+@property int ktore_pytanie;
 
 @end
 
@@ -50,6 +52,7 @@
     self.BackButton.hidden = true;
     self.licznik = 1;
     self.life = 3;
+    self.ktore_pytanie = 1;
     self.CurrentScore.text = [@0 stringValue];
     [self addQuestionArray:@"Czy lipiec ma 31 dni?" answers:@1]; //true
     [self addQuestionArray:@"Czy wojna stuletnia trwała 100 lat?" answers:@0]; //false
@@ -59,7 +62,7 @@
     [self addQuestionArray:@"Czy rybi tłuszcz to smalec?" answers:@0];
     [self addQuestionArray:@"Ocean Arktyczny to największy ocean na świecie?" answers:@0];
     [self addQuestionArray:@"Czy najstarszy uniwersytet w Polsce to UAM w Poznaniu?" answers:@0];
-    [self addQuestionArray:@"Czy założyciel firmy samochodowej Ford mia≥ na imię Harrison?" answers:@0];
+    [self addQuestionArray:@"Czy założyciel firmy samochodowej Ford miał na imię Harrison?" answers:@0];
     [self addQuestionArray:@"Czy o Pojezierzu Mazurskim mówi się \"Kraina Tysiąca Jezior\"?" answers:@1];
     [self addQuestionArray:@"Czy w Wieliczce znajduje się rezerwat przyrody nieożywionej - kopalnia soli?" answers:@1];
     [self addQuestionArray:@"Czy czarna skrzynka w samolotach jest pomarańczowa?" answers:@1];
@@ -106,6 +109,8 @@
     Question *q1 = self.questionArray[self.wylosowanepytanie];
     self.QuestionLabel.text = q1.question;
     // Do any additional setup after loading the view.
+    self.PytanieLabel.text = [NSString stringWithFormat:@"Pytanie %d", self.ktore_pytanie];
+    self.ktore_pytanie++;
 }
 
 - (void)didReceiveMemoryWarning {
